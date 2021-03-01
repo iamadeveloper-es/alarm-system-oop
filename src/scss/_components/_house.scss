@@ -1,0 +1,45 @@
+.house-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .house__room{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .room__inner{
+        width: 80%;
+        max-width: 300px;
+        @include mAuto;
+
+    }
+    .room__header, .room__img, .room__footer{
+        padding: 25px;
+    }   
+    .room__header{
+        font-weight: 600;
+        span{
+            display: block;
+            margin-top: 5px;
+        }
+        .room__title{
+            font-size: 20px;
+            color: $regularBlue;
+        }
+        .room__status{
+            color: $lightBlue;
+        }
+    }
+    .room__img{
+        text-align: center;
+        border: 4px solid $yellow;
+        border-radius: 5px;
+        img{
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+    .room__footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
