@@ -15,12 +15,27 @@
     .shield-container{
         span{
             font-size: 100px;
+            &.danger::before{
+                color: $regularBlue;
+            }
         }
     }
     .alarm-container{
         img{
             width: 100px;
             opacity: .4;
+            &.opacity-1{
+                opacity: 1;
+            }
+        }
+    }
+    .intruder{
+        margin-top: 50px;
+        text-align: center;
+        .btn-custom{
+            &.active{
+                background-color: $danger;
+            }
         }
     }
 }
